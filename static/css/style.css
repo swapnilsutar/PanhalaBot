@@ -9,7 +9,9 @@
 	background-attachment: fixed;
 	padding-bottom: 30px;
 }
-
+.row{
+	display: block;
+}
 h1
 {
 color: black;
@@ -35,12 +37,14 @@ font-size: 40px;
 
 
 .headding_close{
-	position: fixed;
+	/* position: absolute; */
 	/*background-color: #370648;*/
 	right: 111px;
 	bottom: 706px;
 	animation: c_flow 0.6s  cubic-bezier(.23,1,.32,1);
 	/*box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5)*/
+	float: right;
+	margin-right: 40px;
 }
 @keyframes c_flow{
 	0%{
@@ -71,8 +75,7 @@ font-size: 40px;
 
 }
 .headding1{
-	position: fixed;
-	/* background-image: linear-gradient(rgb(141, 43, 171),rgb(247, 197, 255)); */
+	text-align: left;
 	background-color: #370648;
 	right: 70px;
     bottom: 676px;
@@ -95,8 +98,8 @@ font-size: 40px;
 }
 .iframe_chat{
 	/* position: fixed; */
-	bottom: 60px;
-	right: 70px;
+	bottom: 30px;
+	right: 30px;
 	/* right :100px; */
 	width: 450px;
 	height: 617px;

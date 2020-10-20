@@ -23,33 +23,27 @@
 <h1> <span>You are using Tourist Assistant Chatbot </span></h1>
 
     
-<div class="row">
-
-
-  <!-- Column Main Bot area -->
-  <center>
-
-    <div class="col-lg-6" >
+  <div class="row">
+          <!-- Column Main Bot area -->
+   <center>
+      <div class="col-md-4" >
       
-      <!-- <button class="chatbutton1 btn btn-dark" id="b2" onclick="closechat()"> Close</button> -->
-      <!-- ********************************* -->
-                <!-- CHATBOT SECTION -->
+                <!-- ********************************* -->
+                <!--          CHATBOT SECTION          -->
                 <!-- ********************************* -->
                 
-                <img src="https://static-v.tawk.to/a-v3/images/bubbles/67-r-br.svg" style="width:131px; height:123px;position: fixed;bottom: 137px;
-        right: 74px;">
+        
         <button class="chatbutton btn animated shake"  id="b1" onclick="openchat()"> 
           <img src="/static/images/bot2.png" height="60" width="60">
         </button>
         
         <div id="b3" class="headding1">
-          <h3 style="color:white;margin-top: 28px;margin-left: 26px;"> Chatbot</h3>
           
+          <h3 style="color:white;margin-top: 28px;margin-left: 26px;"> Chatbot </h3>   
+          <!-- <img src="/static/images/vol.png" alt="volume" height="20px" width="20px"> -->
           
+          <img src="/static/images/cross1.png" id="b2" class="headding_close" height=20 width=19 onclick="closechat()"> 
         </div>
-        <!-- <img src="/static/images/vol.png" alt="volume" height="20px" width="20px"> -->
-        
-        <img src="/static/images/cross1.png" id="b2" class="headding_close" height=20 width=19 onclick="closechat()"> 
         
         <iframe  src="/bot" class="iframe_chat" id="chatframe">
           
@@ -60,10 +54,11 @@
         <!-- CHABOT SECTION CLOSE -->
         <!-- ************************* -->
       </div>
-    </div>
-    
-  </center>
-    
+    </center>
+
+  </div>
+  
+  
     <!-- Text to speech API -->
     
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>

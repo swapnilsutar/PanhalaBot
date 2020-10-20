@@ -19,17 +19,6 @@ text-align: center;
 font-size: 40px;
 }
 
-.nav-item{
-	padding-right: 20px;
-	padding-left: 20px; 
-	cursor: pointer;
-	
-}
-.nav-item:hover{
-	/*background-color: red ;*/
-	border-bottom:3px solid orange;
-
-}
 .chatbutton{
 	position: fixed;
 	bottom: 60px;
@@ -45,51 +34,8 @@ font-size: 40px;
 	box-shadow: 1px 1px 10px 1px red;
 	transform: scale(1.5);
 }
-.navbar{
-	height:50px;
-}
 
 
-.headding_close{
-	position: fixed;
-	/*background-color: #370648;*/
-	right: 111px;
-	bottom: 706px;
-	animation: c_flow 0.6s  cubic-bezier(.23,1,.32,1);
-	/*box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5)*/
-}
-@keyframes c_flow{
-	0%{
-		bottom:0px;
-		opacity: 0.1;
-	}
-	100%{
-		bottom: 706px;
-		opacity: 1;
-	}
-}
-.headding_close:hover{
-	background-color: red;
-}
-#b2{
-	display: none;
-}
-#b3{
-	display: none;
-}
-
-.img-cross{
-	height:25px;
-	width:25px;
-	position: fixed;
-	/*right:98px;*/
-	/*bottom: 670px;*/
-
-}
-.img-cross:hover{
-	background-color:red;
- 
-}
 .chat-form{
 	display: block;
 	/* background-color:#b2ffbea6; */
@@ -110,10 +56,6 @@ overscroll-behavior: smooth;
 
 }
 
-
-/* .type-me{
-
-} */
 
 .userText {
 color: black;
@@ -169,55 +111,6 @@ padding: 15px;
 font-family: arial;
 font-size: 17px;
 }
-
-#map{
-	display: none;
-
-}
-#gallary{
-	display:none;
-}
-#about{
-	display:none;
-}
-	
-.map-responsive{
-    /* overflow:; */
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-	 box-shadow: 0px 1px 10px 1px grey; 
-    left:0;
-    top:500;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-.headding1{
-	position: fixed;
-	/* background-image: linear-gradient(rgb(141, 43, 171),rgb(247, 197, 255)); */
-	background-color: #370648;
-	right: 70px;
-    bottom: 676px;
-    height: 8vh;
-    width: 449px;
-	box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5);
-	border-radius: 7px 7px 0px 0px;
-	animation :flow 0.6s  cubic-bezier(.23,1,.32,1);
-}
-
-@keyframes flow{
-	0%{
-		bottom:0px;
-		opacity: 0.1;
-	}
-	100%{
-		bottom: 676px;
-		opacity: 1;
-	}
-}
 .iframe_chat{
 	position: fixed;
 	bottom: 60px;
@@ -244,16 +137,4 @@ font-size: 17px;
 		opacity: 1;
 	}
 }
-.admin_form{
-	height:500px;
-	width:400px;
-	
 
-}
-.row{
-height:86.9vh;
-}
-
-.adm{
-	background-color: grey;
-}
