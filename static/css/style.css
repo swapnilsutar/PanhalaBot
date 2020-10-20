@@ -1,0 +1,121 @@
+.bg-image
+{
+	background: linear-gradient(to bottom left, #0dbbea, #66ff66);
+	font-family: Garamond;
+	overflow-x: hidden;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding-bottom: 30px;
+}
+
+h1
+{
+color: black;
+text-align: center;
+font-size: 40px;
+}
+
+.chatbutton{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 1px 1px 10px 1px white;
+	transition: transform 0.2s ease-in;
+	animation-iteration-count: 3;
+}
+.chatbutton:hover{
+	background-color: yellow;
+	box-shadow: 1px 1px 10px 1px red;
+	transform: scale(1.5);
+}
+
+
+.headding_close{
+	position: fixed;
+	/*background-color: #370648;*/
+	right: 111px;
+	bottom: 706px;
+	animation: c_flow 0.6s  cubic-bezier(.23,1,.32,1);
+	/*box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5)*/
+}
+@keyframes c_flow{
+	0%{
+		bottom:0px;
+		opacity: 0.1;
+	}
+	100%{
+		bottom: 706px;
+		opacity: 1;
+	}
+}
+.headding_close:hover{
+	background-color: red;
+}
+#b2{
+	display: none;
+}
+#b3{
+	display: none;
+}
+
+.img-cross{
+	height:25px;
+	width:25px;
+	position: fixed;
+	/*right:98px;*/
+	/*bottom: 670px;*/
+
+}
+.headding1{
+	position: fixed;
+	/* background-image: linear-gradient(rgb(141, 43, 171),rgb(247, 197, 255)); */
+	background-color: #370648;
+	right: 70px;
+    bottom: 676px;
+    height: 8vh;
+    width: 449px;
+	box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5);
+	border-radius: 7px 7px 0px 0px;
+	animation :flow 0.6s  cubic-bezier(.23,1,.32,1);
+}
+
+@keyframes flow{
+	0%{
+		bottom:0px;
+		opacity: 0.1;
+	}
+	100%{
+		bottom: 676px;
+		opacity: 1;
+	}
+}
+.iframe_chat{
+	/* position: fixed; */
+	bottom: 60px;
+	right: 70px;
+	/* right :100px; */
+	width: 450px;
+	height: 617px;
+	background-color: red;
+	display: none;
+	border-radius: 0px 0px 10px 10px;
+	border:none;
+		box-shadow: 0 0 5px rgba(0,0.8,0,0.5);
+		/* box-shadow: 0px -12px 33px rgba(255, 255, 255, 0.5); */
+	animation: f_flow 0.6s  cubic-bezier(.23,1,.32,1);
+	/* animation-delay: 10s; */
+}
+@keyframes f_flow{
+	0%{
+		bottom:-650px;
+		opacity: 0.1;
+	}
+	100%{
+		bottom: 60px;
+		opacity: 1;
+	}
+}
