@@ -49,7 +49,6 @@ font-family:'Tangerine', serif;
 	right: 111px;
 	bottom: 706px;
 	margin-top: 30px;
-	/* animation: c_flow 0.6s  cubic-bezier(.23,1,.32,1); */
 	animation: c_flow 0.6s ;
 	/*box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5)*/
 	float: right;
@@ -93,7 +92,6 @@ font-family:'Tangerine', serif;
     /* width: 449px; */
 	box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5);
 	border-radius: 7px 7px 0px 0px;
-	/* animation :flow 0.6s  cubic-bezier(.23,1,.32,1); */
 	animation :flow 0.6s;
 }
 
