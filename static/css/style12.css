@@ -1,5 +1,5 @@
 ::-webkit-scrollbar{
-    width:10px;
+    width:8px;
 }
 ::-webkit-scrollbar-track{
     background-color: white;
@@ -7,7 +7,7 @@
 }
 ::-webkit-scrollbar-thumb{
     border-radius: 14px;
-    background-color: #370648;
+    background-color: #66217e;
     box-shadow: inset 0 0 2px rgba(0,0,0,.3);
 }
 #mic_b{
@@ -18,20 +18,19 @@
 }
 .chat-form{
 	display: block;
-	/* background-color:#b2ffbea6; */
-	background-color: #ffffff7a;
+	background-color:#b2ffbe77;
+	/* background-color: #ffffff60; */
 	/*border:1px solid;*/
 	/* box-shadow: 0 0 5px rgba(0,0.8,0,0.5); */
 	position: absolute;
 	/*bottom:100px;*/
 	/*right:100px;*/
 	height: 550px;
-	width:450px;
+	/* width:450px; */
 	padding: 20px;	
 	overflow-y: scroll;
 	overflow-x:none;
-	/*direction: ltr;*/
-/*-webkit-overflow-scrolling: touch;*/
+
 overscroll-behavior: smooth;
 
 }
@@ -71,21 +70,27 @@ display: inline-block;
 /*box-shadow: 0px 0px 10px 0px;*/
 box-shadow: 6px 8px 11px -4px rgba(26, 26, 26, 0.5);
 }
-
+.submit_btn{
+	border: none;
+	background: transparent;
+}
+.submit_btn:focus{
+	outline: none;
+}
 
 #userInput {
-
 width: 100%;
 position: fixed;
+display: flex;
 top: 554px;
 left:0px;
 }
 #textInput {
 /* width: 338px; */
-width: 297px;
+/* width: 297px; */
 border-style:solid;
 border-radius: 50px;
-padding: 15px;
+padding: 12px;
 /*position: fixed;*/
 /*border-bottom: 3px solid #009688;*/
 font-family: arial;

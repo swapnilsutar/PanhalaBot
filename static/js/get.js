@@ -24,7 +24,7 @@ function getBotResponse() {
         
         document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
 
-        document.getElementById("my-chat").scrollBy(0, 1000);
+        document.getElementById("my-chat").scrollBy(0, 1);
         });
     }
 

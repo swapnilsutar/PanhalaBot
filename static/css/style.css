@@ -1,3 +1,6 @@
+.container{
+	height: 84vh;
+}
 .bg-image
 {
 	background: linear-gradient(to bottom left, #0dbbea, #66ff66);
@@ -16,9 +19,15 @@ h1
 {
 color: black;
 text-align: center;
-font-size: 40px;
+font-size: 70px;
+font-family:'Tangerine', serif;
 }
-
+.bot_tit{
+	color:white;
+	margin-left: 26px;
+	letter-spacing: 2px;
+	font-family: 'Fjalla One', sans-serif;
+}
 .chatbutton{
 	position: fixed;
 	bottom: 30px;
@@ -34,14 +43,14 @@ font-size: 40px;
 	box-shadow: 1px 1px 10px 1px red;
 	transform: scale(1.5);
 }
-
-
 .headding_close{
 	/* position: absolute; */
 	/*background-color: #370648;*/
 	right: 111px;
 	bottom: 706px;
-	animation: c_flow 0.6s  cubic-bezier(.23,1,.32,1);
+	margin-top: 30px;
+	/* animation: c_flow 0.6s  cubic-bezier(.23,1,.32,1); */
+	animation: c_flow 0.6s ;
 	/*box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5)*/
 	float: right;
 	margin-right: 40px;
@@ -75,15 +84,17 @@ font-size: 40px;
 
 }
 .headding1{
+	/* position: absolute; */
 	text-align: left;
 	background-color: #370648;
 	right: 70px;
     bottom: 676px;
     height: 8vh;
-    width: 449px;
+    /* width: 449px; */
 	box-shadow: 0px -2px 5px rgba(0,0.8,0,0.5);
 	border-radius: 7px 7px 0px 0px;
-	animation :flow 0.6s  cubic-bezier(.23,1,.32,1);
+	/* animation :flow 0.6s  cubic-bezier(.23,1,.32,1); */
+	animation :flow 0.6s;
 }
 
 @keyframes flow{
@@ -97,28 +108,48 @@ font-size: 40px;
 	}
 }
 .iframe_chat{
-	/* position: fixed; */
-	bottom: 30px;
-	right: 30px;
-	/* right :100px; */
-	width: 450px;
 	height: 617px;
-	background-color: red;
 	display: none;
-	border-radius: 0px 0px 10px 10px;
 	border:none;
-		box-shadow: 0 0 5px rgba(0,0.8,0,0.5);
-		/* box-shadow: 0px -12px 33px rgba(255, 255, 255, 0.5); */
-	animation: f_flow 0.6s  cubic-bezier(.23,1,.32,1);
-	/* animation-delay: 10s; */
+	/* box-shadow: 0px 6px 24px 0px #2b302d; */
+	animation: f_flow 0.6s;
 }
 @keyframes f_flow{
 	0%{
-		bottom:-650px;
+		/* bottom:-650px; */
 		opacity: 0.1;
 	}
 	100%{
-		bottom: 60px;
+		/* bottom: 60px; */
 		opacity: 1;
 	}
+}
+::selection{
+	background-color: rgba(255, 255, 0, 0.52);
+	color: black;
+}
+
+
+footer{
+	position: absolute;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #35d9af;
+    width: 100%;
+    z-index: -1;
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: "Arial";
+}
+footer a{
+	color: #4c0a7e;
+    text-decoration: none;
+    font-weight: 600;
+}
+footer a:hover{
+	color: white;
+text-decoration: none;
 }

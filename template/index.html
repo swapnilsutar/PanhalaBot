@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <script href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,54 +11,70 @@
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/style12.css">
 
 
 </head>
-<!-- <body style="background-image: url({{url_for('static',filename='p1.jpg')}});background-size: cover;"> -->
 <body class="bg-image">
 
 <h1> <span>Welcome  </span></h1>
 <h1> <span>You are using Tourist Assistant Chatbot </span></h1>
 
     
-  <div class="row">
-          <!-- Column Main Bot area -->
-   <center>
-      <div class="col-md-4" >
-      
-                <!-- ********************************* -->
-                <!--          CHATBOT SECTION          -->
-                <!-- ********************************* -->
-                
-        
-        <button class="chatbutton btn animated shake"  id="b1" onclick="openchat()"> 
-          <img src="/static/images/bot2.png" height="60" width="60">
-        </button>
-        
-        <div id="b3" class="headding1">
-          
-          <h3 style="color:white;margin-top: 28px;margin-left: 26px;"> Chatbot </h3>   
-          <!-- <img src="/static/images/vol.png" alt="volume" height="20px" width="20px"> -->
-          
-          <img src="/static/images/cross1.png" id="b2" class="headding_close" height=20 width=19 onclick="closechat()"> 
-        </div>
-        
-        <iframe  src="/bot" class="iframe_chat" id="chatframe">
-          
-        </iframe>
-        
-        
-        <!-- ************************* -->
-        <!-- CHABOT SECTION CLOSE -->
-        <!-- ************************* -->
-      </div>
-    </center>
+  <div class="container">
 
+
+    <div class="row">
+            <!-- Column Main Bot area -->
+
+        <div class="col-sm-9 col-md-8 col-lg-6 mx-auto align-items-center justify-content-center" >
+        
+                  <!-- ********************************* -->
+                  <!--          CHATBOT SECTION          -->
+                  <!-- ********************************* -->
+                  
+          
+          <button class="chatbutton btn animated shake"  id="b1" onclick="openchat()"> 
+            <img src="/static/images/bot2.png" height="60" width="60">
+          </button>
+            
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div id="b3" class="headding1">
+         
+                <img src="/static/images/cross1.png" id="b2" class="headding_close" height=20 width=19 onclick="closechat()"> 
+                <br>
+                <h3 class="bot_tit"> PanhalaBot </h3>   
+                <!-- <img src="/static/images/vol.png" alt="volume" height="20px" width="20px"> -->
+                
+              </div>
+            
+            </div>
+
+          <iframe  src="/bot" class="col-sm-12 col-md-12 col-lg-12 iframe_chat" id="chatframe">
+            
+          </iframe>
+          
+          
+          <!-- ************************* -->
+          <!-- CHABOT SECTION CLOSE -->
+          <!-- ************************* -->
+        </div>
+
+
+    </div>
+  
   </div>
-  
-  
+
+  <footer>
+     Made by <a href="https://www.linkedin.com/in/swapnilsutar/"> Swapnil Sutar </a>
+       &#169; 2020 
+ </footer>
+
     <!-- Text to speech API -->
     
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
@@ -69,7 +85,7 @@
 
     function openchat(){
 
-        var msg = "Hi!  I am Chatbot You can ask me anything about Panhala Fort";
+        var msg = "Hi!  I am PanahlaBot You can ask me anything about Panhala Fort";
     
         responsiveVoice.speak(msg);
 
@@ -95,7 +111,7 @@
         // document.getElementById("b2").style.display = "none";
         // document.getElementById("b3").style.display = "none";
 
-        $(ch).hide(500);
+        $(ch).hide(50);
         $(b2).hide(50);
         $(b3).hide(50);
 
